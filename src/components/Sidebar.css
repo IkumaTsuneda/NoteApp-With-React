@@ -1,0 +1,57 @@
+button {
+    background: none;
+    border: none;
+    color: #08c;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.app-sidebar {
+    width: 30%;
+    height: 100vh;
+    border-right: 1px solid #ddd;
+}
+
+.app-sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.app-sidebar-header h1 {
+    margin: 0;
+}
+
+.app-sidebar-notes {
+    height: calc(100vh - 78px);
+    overflow-y: scroll;
+}
+
+.app-sidebar-note {
+    padding: 25px;
+    cursor: pointer;
+    transition: all 0.2;
+}
+
+.app-sidebar-note p {
+    margin: 10px 0;
+}
+
+.app-sidebar-note small {
+    color: #999;
+}
+
+.app-sidebar-note:hover {
+    background-color: #6cbad9;
+}
+
+.app-sidebar-note.active {
+    background-color: #6cbad9;
+}
+
+.app-sidebar-title {
+    display: flex;
+    justify-content: space-between;
+}
