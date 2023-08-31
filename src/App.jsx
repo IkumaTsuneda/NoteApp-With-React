@@ -16,7 +16,9 @@ function App() {
 
   useEffect(() => {
     //初期表示時、一番上のノートが選択された状態にする
-    setActiveNote(notes[0].id)
+    if(!notes.length === 0){
+      setActiveNote(notes[0].id)
+    }
   }, []);
 
   /**
@@ -30,6 +32,7 @@ function App() {
       modDate: Date.now(),
     };
     setNotes([...notes, newNote]);
+    setActiveNote(newNote.id);
   };
 
   /**
